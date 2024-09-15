@@ -10,13 +10,16 @@ export default function Home() {
     return (
         <main className="max-w-3xl p-1 m-auto">
             <div className="hero flex mt-8">
-                <div className="left flex flex-col justify-center">
-                    <h1 className={`${pixelify_Sans.className} text-7xl`}>
+                <div className="left flex flex-col justify-center items-center md:items-start">
+                    <h1
+                        className={`${pixelify_Sans.className} text-7xl text-center md:text-left`}
+                    >
                         Chetan Anand
                     </h1>
                     <p className="w-3/4 mt-2">
-                        My name is Chetan Anand, here I showcase all my
-                        projects, interests, currently learning tech stacks.
+                        Hi, I’m Chetan Anand. Welcome to my portfolio! Here,
+                        you’ll find a showcase of my projects, interests, and
+                        the tech stacks I’m currently exploring.
                     </p>
                     <div className="links flex items-center gap-3 mt-4">
                         <button className="bg-theme-grey text-black px-4 py-2 rounded-md font-bold">
@@ -31,7 +34,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="right">
+                <div className="right hidden md:block">
                     <div className="w-[200px] h-[200px] rounded-full flex justify-center items-center bg-custom-grey">
                         <p
                             className={`${pixelify_Sans.className} text-8xl text-black`}
@@ -47,7 +50,7 @@ export default function Home() {
                 >
                     projects
                 </div>
-                <div className="projects-container p-2 grid grid-cols-2 gap-3">
+                <div className="projects-container p-2 grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div className="bg-theme-grey text-black p-3 rounded-md ">
                         <h1
                             className={`${pixelify_Sans.className} text-2xl border-b-2 border-black`}
