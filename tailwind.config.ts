@@ -13,6 +13,7 @@ const config: Config = {
                 foreground: "var(--foreground)",
                 "custom-grey": "#BFBFBF",
                 "theme-grey": "#D9D9D9",
+                "light-background": "#ededed",
             },
         },
     },
