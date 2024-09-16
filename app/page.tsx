@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { pixelify_Sans } from "./fonts/fonts";
 import github from "@/app/assets/Github.png";
 import bookmarks_io from "@/app/assets/bookmarks-io.png";
@@ -26,11 +27,16 @@ export default function Home() {
                             Contact me
                         </button>
                         <div className="github bg-theme-grey aspect-square p-2 rounded-full">
-                            <Image
-                                src={github}
-                                alt="Github image"
-                                width={"25"}
-                            />
+                            <Link
+                                href={"https://github.com/cheater108"}
+                                target="_blank"
+                            >
+                                <Image
+                                    src={github}
+                                    alt="Github image"
+                                    width={"25"}
+                                />
+                            </Link>
                         </div>
                     </div>
                 </div>
