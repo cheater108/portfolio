@@ -3,7 +3,7 @@ import expressjs from "@/app/assets/express-svgrepo-com.svg";
 import reactjs from "@/app/assets/react-svgrepo-com.svg";
 import mongodb from "@/app/assets/mongodb-svgrepo-com.svg";
 import Image, { StaticImageData } from "next/image";
-import { project, skills } from "../lib/Projects-Data";
+import { skills } from "../lib/Projects-Data";
 
 const image = {
     node: nodejs,

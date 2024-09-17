@@ -1,6 +1,6 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { pixelify_Sans } from "../fonts/fonts";
 import Techused from "./Techused";
 import { project } from "../lib/Projects-Data";
