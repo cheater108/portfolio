@@ -3,8 +3,9 @@ import booksmarks_io from "@/app/assets/bookmarks-io.png";
 import supper_app from "@/app/assets/supper-app.png";
 import pocket_notes from "@/app/assets/pocket-notes.png";
 import rock_paper_scissors from "@/app/assets/rock-paper-scissors.png";
+import job_finder from "@/app/assets/Jobfinder.png";
 
-export type skills = "node" | "express" | "react" | "mongodb";
+export type skills = "node" | "express" | "react" | "mongodb" | "tailwind";
 
 export type project = {
     name: string;
@@ -23,6 +24,14 @@ const projects: project[] = [
         skills_array: ["node", "express", "react", "mongodb"],
     },
     {
+        name: "job-portal",
+        img: job_finder,
+        desc: "List jobs and search jobs based on skills and position.",
+        url: "https://job-portal-4nd0.onrender.com/",
+        skills_array: ["node", "express", "react", "mongodb", "tailwind"],
+    },
+
+    {
         name: "supper-app",
         img: supper_app,
         desc: "Fontend app design that contains a lot of small apps like weather, timer, news etc.",
@@ -34,7 +43,7 @@ const projects: project[] = [
         img: pocket_notes,
         desc: "Notes taking web app using react. Notes are stored in local storage.",
         url: "https://pocket-notes-gilt.vercel.app/",
-        skills_array: [],
+        skills_array: ["react"],
     },
     {
         name: "rock-paper-scissors",

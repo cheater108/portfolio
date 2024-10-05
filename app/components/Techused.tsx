@@ -2,6 +2,7 @@ import nodejs from "@/app/assets/nodejs-1-logo-svgrepo-com.svg";
 import expressjs from "@/app/assets/express-svgrepo-com.svg";
 import reactjs from "@/app/assets/react-svgrepo-com.svg";
 import mongodb from "@/app/assets/mongodb-svgrepo-com.svg";
+import tailwind from "@/app/assets/Tailwind.png";
 import Image, { StaticImageData } from "next/image";
 import { skills } from "../lib/Projects-Data";
 
@@ -10,6 +11,7 @@ const image = {
     express: expressjs,
     react: reactjs,
     mongodb,
+    tailwind,
 };
 
 function getImage(skill: skills): StaticImageData {
@@ -18,7 +20,7 @@ function getImage(skill: skills): StaticImageData {
 
 function Techused({ skills_array }: { skills_array: skills[] }) {
     return (
-        <div className="tech flex gap-2 mt-2">
+        <div className="tech flex gap-2 mt-2 items-center">
             {skills_array.map((skill) => (
                 <Image
                     key={skill}

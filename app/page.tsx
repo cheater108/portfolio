@@ -4,6 +4,9 @@ import { pixelify_Sans } from "./fonts/fonts";
 import github from "@/app/assets/Github.png";
 import projects from "./lib/Projects-Data";
 import ProjectCard from "./components/ProjectCard";
+import JavaScript from "@/app/assets/JavaScript-logo.png";
+import Cpp from "@/app/assets/ISO_C++_Logo.svg.png";
+import Java from "@/app/assets/java-logo.png";
 
 export default function Home() {
     return (
@@ -58,6 +61,35 @@ export default function Home() {
                     {projects.map((project) => (
                         <ProjectCard {...project} key={project.name} />
                     ))}
+                </div>
+            </div>
+            <div className="skills">
+                <div
+                    className={`${pixelify_Sans.className} border-b-2 border-black dark:border-slate-50 text-xl`}
+                >
+                    languages
+                </div>
+                <div className="lang flex gap-4 justify-center mt-4">
+                    <Image
+                        className="rounded-md"
+                        src={JavaScript}
+                        alt="javascript logo"
+                        width={113}
+                        height={100}
+                    />
+                    <Image
+                        className="rounded-md"
+                        src={Java}
+                        alt="java logo"
+                        width={113}
+                        height={100}
+                    />
+                    <Image
+                        className="rounded-md"
+                        src={Cpp}
+                        alt="c++ logo"
+                        width={100}
+                    />
                 </div>
             </div>
         </main>
