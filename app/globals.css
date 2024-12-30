@@ -30,3 +30,13 @@ body {
         text-wrap: balance;
     }
 }
+
+.shrink {
+    width: 111px;
+    transition: all 0.25s;
+}
+
+.expand {
+    width: 205px;
+    transition: all 0.25s;
+}

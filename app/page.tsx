@@ -4,9 +4,10 @@ import { pixelify_Sans } from "./fonts/fonts";
 import github from "@/app/assets/Github.png";
 import projects from "./lib/Projects-Data";
 import ProjectCard from "./components/ProjectCard";
-import JavaScript from "@/app/assets/JavaScript-logo.png";
-import Cpp from "@/app/assets/ISO_C++_Logo.svg.png";
-import Java from "@/app/assets/java-logo.png";
+// import JavaScript from "@/app/assets/JavaScript-logo.png";
+// import Cpp from "@/app/assets/ISO_C++_Logo.svg.png";
+// import Java from "@/app/assets/java-logo.png";
+import ContactMe from "./components/ContactMe";
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
             <div className="hero flex mt-8">
                 <div className="left flex flex-col justify-center items-center md:items-start">
                     <h1
-                        className={`${pixelify_Sans.className} text-7xl text-center md:text-left`}
+                        className={`${pixelify_Sans.className} text-7xl text-center md:text-left hover:drop-shadow-xl cursor-pointer`}
                     >
                         Chetan Anand
                     </h1>
@@ -24,9 +25,7 @@ export default function Home() {
                         the tech stacks I’m currently exploring.
                     </p>
                     <div className="links flex items-center gap-3 mt-4">
-                        <button className="bg-theme-grey text-black px-4 py-2 rounded-md font-bold">
-                            Contact me
-                        </button>
+                        <ContactMe />
                         <div className="github bg-theme-grey aspect-square p-2 rounded-full">
                             <Link
                                 href={"https://github.com/cheater108"}
@@ -53,9 +52,13 @@ export default function Home() {
             </div>
             <div className="projects mt-3">
                 <div
-                    className={`${pixelify_Sans.className} border-b-2 border-black dark:border-slate-50 text-xl`}
+                    className={`${pixelify_Sans.className} border-b-2 border-black dark:border-slate-50 flex justify-between items-center`}
                 >
-                    projects
+                    <p className="text-3xl">projects</p>
+                    <p>
+                        &#9888; projects hosted on render will take 1min to
+                        load.
+                    </p>
                 </div>
                 <div className="projects-container p-2 grid grid-cols-1 md:grid-cols-2 gap-3">
                     {projects.map((project) => (
@@ -63,7 +66,7 @@ export default function Home() {
                     ))}
                 </div>
             </div>
-            <div className="skills">
+            {/* <div className="skills">
                 <div
                     className={`${pixelify_Sans.className} border-b-2 border-black dark:border-slate-50 text-xl`}
                 >
@@ -91,7 +94,7 @@ export default function Home() {
                         width={100}
                     />
                 </div>
-            </div>
+            </div> */}
         </main>
     );
 }

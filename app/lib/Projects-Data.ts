@@ -4,6 +4,8 @@ import supper_app from "@/app/assets/supper-app.png";
 import pocket_notes from "@/app/assets/pocket-notes.png";
 import rock_paper_scissors from "@/app/assets/rock-paper-scissors.png";
 import job_finder from "@/app/assets/Jobfinder.png";
+import pro_manage from "@/app/assets/pro-manage.png";
+import order_uk from "@/app/assets/order-uk.png";
 
 export type skills = "node" | "express" | "react" | "mongodb" | "tailwind";
 
@@ -19,14 +21,28 @@ const projects: project[] = [
     {
         name: "bookmarks-io",
         img: booksmarks_io,
-        desc: "Web app to save bookmarks online, arrange in different groups.",
+        desc: "Web app to save bookmarks online, create different groups, add description etc.",
         url: "https://bookmarks-io.onrender.com/",
+        skills_array: ["node", "express", "react", "mongodb"],
+    },
+    {
+        name: "Pro-manage",
+        img: pro_manage,
+        desc: "MERN web platform to create tasks, todos, assign and share tasks to user.",
+        url: "https://pro-manage-client-liart.vercel.app/dashboard",
+        skills_array: ["node", "express", "react", "mongodb"],
+    },
+    {
+        name: "Order-uk",
+        img: order_uk,
+        desc: "Demo food delivery app. Browse restaurants, place order, add address and payment details.",
+        url: "https://order-uk-frontend.vercel.app/",
         skills_array: ["node", "express", "react", "mongodb"],
     },
     {
         name: "job-portal",
         img: job_finder,
-        desc: "List jobs and search jobs based on skills and position.",
+        desc: "Job listing platform built on MERN stack. Add jobs, search for jobs with integration to linkedin API.",
         url: "https://job-portal-4nd0.onrender.com/",
         skills_array: ["node", "express", "react", "mongodb", "tailwind"],
     },
@@ -34,23 +50,16 @@ const projects: project[] = [
     {
         name: "supper-app",
         img: supper_app,
-        desc: "Fontend app design that contains a lot of small apps like weather, timer, news etc.",
+        desc: "Infotainment web app that contains various small apps like weather, news, notes, movies etc.",
         url: "https://super-app-seven-gamma.vercel.app/",
         skills_array: ["react"],
     },
     {
         name: "pocket-notes",
         img: pocket_notes,
-        desc: "Notes taking web app using react. Notes are stored in local storage.",
+        desc: "Notes taking web app made using react. Create groups and take notes.",
         url: "https://pocket-notes-gilt.vercel.app/",
         skills_array: ["react"],
-    },
-    {
-        name: "rock-paper-scissors",
-        img: rock_paper_scissors,
-        desc: "Play rock paper scissors game with computer. Made with vanilla javascript.",
-        url: "https://rock-paper-scissors-mu-taupe.vercel.app/",
-        skills_array: [],
     },
 ];
 

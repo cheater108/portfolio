@@ -15,7 +15,7 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
     }
     return (
         <div
-            className={`antialiased ${dark} bg-light-background text-black dark:bg-black dark:text-white `}
+            className={`${dark} bg-light-background text-black dark:bg-black dark:text-white `}
         >
             <Navbar mode={dark} toggle={toggleMode} />
             {children}
