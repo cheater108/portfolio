@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 import booksmarks_io from "@/app/assets/bookmarks-io.png";
 import supper_app from "@/app/assets/supper-app.png";
 import pocket_notes from "@/app/assets/pocket-notes.png";
-import rock_paper_scissors from "@/app/assets/rock-paper-scissors.png";
+// import rock_paper_scissors from "@/app/assets/rock-paper-scissors.png";
 import job_finder from "@/app/assets/Jobfinder.png";
 import pro_manage from "@/app/assets/pro-manage.png";
 import order_uk from "@/app/assets/order-uk.png";
